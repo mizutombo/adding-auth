@@ -16,7 +16,7 @@ describe('tests user model :', () => {
 		return new User({ username: 'username', password: 'halibut' }).validate();
 	});
 
-	it('sets has from password and correctly compares', () => {
+	it('sets hash from password and correctly compares', () => {
 		const data = { username: 'username', password: 'halibut' };
 		const user = new User(data);
 

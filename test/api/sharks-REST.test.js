@@ -3,7 +3,7 @@ const chaiHttp = require('chai-http');
 const assert = chai.assert;
 chai.use(chaiHttp);
 
-process.env.MONGODB_URI = 'mongodb://localhost:27017/sharks-REST-test';
+process.env.MONGODB_URI = 'mongodb://localhost:27017/sharks-REST';
 const connection = require('../../lib/connection');
 const mongoose = require('mongoose');
 const app = require('../../lib/app');
