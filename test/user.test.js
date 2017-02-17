@@ -5,7 +5,7 @@ const assert = require('chai').assert;
 describe('tests user model :', () => {
 
 	it('requires a username', () => {
-		return testInvalid({ password: 'halibut'});
+		return testInvalid({ password: 'halibut' });
 	});
 
 	it('requires a hash via password', () => {
