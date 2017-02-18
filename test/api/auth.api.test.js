@@ -108,7 +108,7 @@ describe('auth routes :', () => {
 				);
 		});	
 
-		it('403 wtih invalid token', () => {
+		it('401 with invalid token', () => {
 			return request
 				.get('/sharks')
 				.set('Authorization', 'badtoken')
